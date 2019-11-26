@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="{{config.language}}">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="robots" content="noindex">
+
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<link rel="apple-touch-icon" sizes="120x120" href="/assets/{{config.brand}}/img/logo-120.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+		<link rel="shortcut icon" sizes="48x48" href="/assets/{{config.brand}}/img/logo-48.png">
+
+		<style>
+
+			@font-face {
+			  	font-family: "name";
+			  	src: url("./name.otf") format("opentype");
+			}
+			@font-face {
+			  	font-family: "subs";
+			  	src: url("./subs.otf") format("opentype");
+			}
+			@font-face {
+				font-family: "venue";
+				src: url("./venue.woff2") format('woff2');
+			}
+			@font-face {
+				font-family: "venue1";
+				src: url("./venue1.otf") format('opentype');
+			}
+			.rws-invitation-container {
+			    margin: 0px;
+			    padding: 0px;
+			    background: #000;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    min-height: 100vh;
+			}
+
+
+			.rws-invitation {
+				background: #FFF;
+				border-width: 10px;
+		  		border-style: solid;
+		  		border-image: linear-gradient(to bottom, white, #113016) 1% 40%;
+			}
+
+			header {
+				height: 500px;
+			    background: url(./rs.jpg) center no-repeat;
+			    background-size: cover;
+			    background-position-x: 90%;
+
+			}
+
+			section {
+				height: 410px;
+    			position: relative;
+			}
+
+			header,
+			section {
+				box-sizing: border-box;
+			}
+
+			.rws-save-the-date-container {
+				height: 100%;
+			    width: 100%;
+			    background: linear-gradient(to top, rgba(255,255,255,1) 10% ,rgba(255,255,255,0) 70%);
+			}
+
+			.rws-save-the-date {
+				background: url(./save_the_date.png) center no-repeat;
+			    width: 25%;
+			    height: 25%;
+			    background-size: contain;
+			}
+
+			.rws-invitation-matter {
+				position: absolute;
+			    top: -50%;
+			    width: 100%;
+			    display: flex;
+			    flex-direction: column;
+			    align-items: center;
+			    text-shadow: 1px 1px 5px grey;
+			    color: #2d3a3a;
+			    text-align: center;
+			}
+
+			.rws-together {
+			    font-size: 30px;
+		    	font-family: subs;
+		    	color: #1f251e;
+			 }
+
+			 .rws-name {
+			    font-size: 75px;
+			    font-family: name;
+			    width: 250px;
+			    text-align: center;
+			 }
+
+			 .rws-invite {
+			 	font-family: subs;
+		    	font-size: 30px;
+			 }
+
+			 .rws-wedding,
+			 .rws-reception,
+			 .rws-reception-header {
+			 	font-family: venue1;
+			    font-size: 20px;
+			    letter-spacing: 1px;
+			    line-height: 1.5;
+			    font-weight: bold;
+			    text-shadow: 1px 1px 3px grey;
+			 }
+
+			 @media (max-width: 600px) {
+				.rws-invitation{
+				  width: 100%;
+				}
+			 }
+
+			 @media (min-width: 601px) {
+				.rws-invitation{
+					width: 500px;
+			 	}
+			 }
+		</style>
+	</head>
+
+	<body class="rws-invitation-container">
+		<div class="rws-invitation">
+			<header>
+				<div class='rws-save-the-date-container'>
+					<div class="rws-save-the-date"></div>
+				</div>
+				
+			</header>
+
+			<section>
+				<div class="rws-invitation-matter">
+					<div class="rws-together">Together with our families we</div>
+					<div class="rws-name">Ranjith & Swathi</div>
+					<div class="rws-invite">Invite you to celebrate our wedding</div>
+					<hr>*<hr>
+					<div class="rws-wedding">
+						<div class="rws-wedding-venue">KRK Auditorium , Vadakanthara, Palakkad</div>
+						<div class="rws-wedding-time">12th December 2019 11:00 a.m. to 12 p.m.</div>
+				    </div>
+				    <hr>
+				    <div class="rws-reception-header">Reception</div>
+				    <hr>
+					<div class="rws-reception">
+						<div class="rws-reception-venue">Top In Town Auditorium, Near KSRTC Bus Stand, Palakkad</div>
+						<div class="rws-reception-time">14th December 2019 11:00 a.m. to 02:00 p.m.</div>
+					</div>
+					<hr>***
+				</div>	
+			</section>
+		</div>
+	</body>
+
+</html>
