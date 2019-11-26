@@ -4,9 +4,9 @@
   "description": "Ranjith Weds Swathi Invite",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
-  "author": "",
+  "author": "Ranjith",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
