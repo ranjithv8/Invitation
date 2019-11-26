@@ -6,4 +6,4 @@ app.use(express.static('public'));
 app.get('/invite',function(req,res){
     res.sendFile(__dirname+'/public/Invitation.html');
 });
-app.listen(3000, () => console.log('app listening on port 3000!'));
+app.listen(80, () => console.log('app listening on port 80!'));
